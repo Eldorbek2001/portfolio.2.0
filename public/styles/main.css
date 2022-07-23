@@ -1,13 +1,23 @@
 body {
   font-family: 'PT Mono', monospace;
-
-  background-color: cyan;
   text-align: center;
+  /* footer-fixing */
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height:100vh;
   }
+
+/* Navabar */
+
+
 
 .profile-pic{
   height: 200px;
   width: 200px;
+}
+.education{
+  background-color: gray;
 }
 .skills{
   background-color: red;
@@ -28,4 +38,11 @@ body {
     margin: 0 10px 0 10px;
     color: black;
     text-decoration: none;
+
+}
+.footer a:hover {
+    margin: 0 10px 0 10px;
+    color: gray;
+    text-decoration: none;
+
 }
