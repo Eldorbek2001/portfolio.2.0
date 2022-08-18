@@ -18,7 +18,8 @@ app.set('view engine', 'ejs');
 
 
 bot.on("message", (ctx) =>{
-  console.log(ctx.update.message);
+  var res = telegramHandler.getLink(ctx.message);
+  console.log(res);
 })
 bot.launch();
 

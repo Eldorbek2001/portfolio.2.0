@@ -1,5 +1,5 @@
 
 
-module.exports.getLink = function(bot, link){
-return "This is the link" + link;
+module.exports.getLink = function(messageObj){
+return "This is the link" + messageObj;
 }
