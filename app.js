@@ -50,19 +50,19 @@ const Alumni = mongoose.model("users", alumniSchema);
 // bot
 
 app.get("/", function(req, res){
-  res.render('core', {content: 'landing'});
+  res.sendFile(__dirname+"/pages/home.html");
 });
 
 
 
 app.get("/skills", function(req, res){
-  res.render('core', {content: 'skills'});
+  res.sendFile(__dirname+"/pages/skills.html");
 });
 
 
 
 app.get("/education", function(req, res){
-  res.render('core', {content: 'education'});
+res.sendFile(__dirname+"/pages/education.html");
 });
 
 

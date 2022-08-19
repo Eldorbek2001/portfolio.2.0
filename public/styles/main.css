@@ -13,6 +13,13 @@ body {
   height: 200px;
   width: 200px;
 }
+
+.nav-link{
+  font-size: 100px;
+}
+
+
+
 .education{
   background-color: gray;
 }
@@ -49,6 +56,10 @@ width: 100%;
  padding: 6px;
 }
 .landing{
+}
+.nav-item a{
+  font-size: 95%;
+  margin: 0 10px 0 10px;
 }
 
 
