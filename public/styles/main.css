@@ -8,23 +8,18 @@ body {
   min-height:100vh;
   }
 
-/* Navabar */
-.profile-pic{
-  height: 200px;
-  width: 200px;
-}
 
+/* Navabar */
 .nav-link{
   font-size: 100px;
 }
-
-
-
-.education{
-  background-color: gray;
-}
-.skills{
-  background-color: red;
+/* Landing */
+.profile-pic{
+  height: 200px;
+  width: 200px;
+  border: solid 3px cyan;
+  border-radius: 100%;
+  background-color: white;
 }
 .skill{
   border: solid 10px;
@@ -38,37 +33,87 @@ width: 100%;
 .software-dev{
   background-color: blue;
 }
-
-/* Landing */
-
-.info{
+.home-info{
+  text-align: left;
   display: inline-block;
-  width:60%;
+  padding: 20px;
+  width:40%;
   height: 100%;
-  background-color: yellow;
+  background-color: black;
+  border-left: solid 1px gray;
 }
 .myshadow{
- float: right;
+ float: left;
  display: inline-block;
- width:40%;
+ width:60%;
  height: 100%;
  background-color: black;
- padding: 6px;
+ padding: 20px;
 }
 .landing{
 }
-.nav-item a{
-  font-size: 95%;
-  margin: 0 10px 0 10px;
+.experience-box{
+  padding: 20px;
+  margin: 20px 10px 20px 10px;
+  border-radius: 20px;
 }
+.experience-item{
+  padding: 20px;
+  margin: 20px 10px 20px 10px;
+  border: solid 4px blue;
+  border-radius: 20px;
+}
+.experience-item p{
+  color: #ADB5BD;
+}
+.experience-item h4{
+  padding: 0;
+  margin: 0;
+  color: #ADB5BD;
+}
+.projects-box{
+  padding: 20px;
+  margin: 200px 10px 20px 10px;
+  border-radius: 20px;
+}
+.project-item{
+  display: inline-block;
+  padding: 20px;
+  margin: 20px 10px 20px 10px;
+  border: solid 3px #A629C2;
+  border-radius: 20px;
+
+}
+/* Education page */
+.education{
+  background-color: black;
+}
+.school{
+  width: 80%;
+  border: solid 2px yellow;
+  padding: 40px;
+  margin: 40px auto 40px auto;
+  border-radius: 20px;
+}
+
+
 
 
 
 
 /* Footer */
+.container{
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #343A40;
+  }
+.nav-item a{
+  font-size: 95%;
+  margin: 0 10px 0 10px;
+}
 .footer a {
     margin: 0 10px 0 10px;
-    color: black;
+    color: white;
     text-decoration: none;
 
 }
