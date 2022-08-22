@@ -4,10 +4,10 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const app =  express();
 const mongoose = require("mongoose");
-mongoose.connect("mongodb+srv://"+process.env.DATABASE_API_USERNAME+":"+process.env.DATABASE_API_PASSWORD+"@cluster0.mjlk1.mongodb.net/?retryWrites=true&w=majority/testDB/test", {useNewUrlParser: true});
-const { Telegraf } = require('telegraf');
-const bot = new Telegraf(process.env.BOT_TOKEN);
-const telegramHandler = require(__dirname + "/views/telegramHandler.js");
+// mongoose.connect("mongodb+srv://"+process.env.DATABASE_API_USERNAME+":"+process.env.DATABASE_API_PASSWORD+"@cluster0.mjlk1.mongodb.net/?retryWrites=true&w=majority/testDB/test", {useNewUrlParser: true});
+// const { Telegraf } = require('telegraf');
+// const bot = new Telegraf(process.env.BOT_TOKEN);
+// const telegramHandler = require(__dirname + "/views/telegramHandler.js");
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
@@ -17,11 +17,11 @@ app.set('view engine', 'ejs');
 
 
 
-bot.on("message", (ctx) =>{
-  var res = telegramHandler.getLink(ctx.message);
-  console.log(res);
-})
-bot.launch();
+// bot.on("message", (ctx) =>{
+//   var res = telegramHandler.getLink(ctx.message);
+//   console.log(res);
+// })
+// bot.launch();
 
 
 var newsSchema = {

@@ -66,6 +66,9 @@ width: 100%;
 .experience-item p{
   color: #ADB5BD;
 }
+.me p{
+  color: #ADB5BD;
+}
 .experience-item h4{
   padding: 0;
   margin: 0;
@@ -73,7 +76,7 @@ width: 100%;
 }
 .projects-box{
   padding: 20px;
-  margin: 200px 10px 20px 10px;
+  margin: 50px 10px 20px 10px;
   border-radius: 20px;
 }
 .project-item{
@@ -89,9 +92,23 @@ width: 100%;
   background-color: black;
 }
 .school{
+  color:white;
   width: 80%;
   border: solid 2px yellow;
   padding: 40px;
+  margin: 40px auto 40px auto;
+  border-radius: 20px;
+}
+.school-info{
+  text-align: justify;
+}
+
+.connections{
+  text-align: left;
+  color: white;
+  width: 80%;
+  border: solid 2px cyan;
+  padding: 20px;
   margin: 40px auto 40px auto;
   border-radius: 20px;
 }
@@ -102,6 +119,8 @@ width: 100%;
 
 
 /* Footer */
+
+
 .container{
     padding-left: 50px;
     padding-right: 50px;
