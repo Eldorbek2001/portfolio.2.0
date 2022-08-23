@@ -17,9 +17,9 @@ body {
 .profile-pic{
   height: 200px;
   width: 200px;
-  border: solid 3px cyan;
+  border: solid 3px #00ffff;
   border-radius: 100%;
-  background-color: white;
+  background-color: #ffffff;
 }
 .skill{
   border: solid 10px;
@@ -59,7 +59,7 @@ width: 100%;
 }
 .experience-item{
   padding: 20px;
-  margin: 20px 10px 20px 10px;
+  margin: 20px 0px 20px 0px;
   border: solid 4px blue;
   border-radius: 20px;
 }
@@ -82,8 +82,8 @@ width: 100%;
 .project-item{
   display: inline-block;
   padding: 20px;
-  margin: 20px 10px 20px 10px;
-  border: solid 3px #A629C2;
+  margin: 20px 15px 20px 15px;
+  border: solid 3px #cc00ff;
   border-radius: 20px;
 
 }
@@ -92,31 +92,60 @@ width: 100%;
   background-color: black;
 }
 .school{
-  color:white;
-  width: 80%;
-  border: solid 2px yellow;
+  color: #ffffff;
+  width: 60%;
+  border: solid 2px #fff000;
   padding: 40px;
   margin: 40px auto 40px auto;
   border-radius: 20px;
+
 }
 .school-info{
   text-align: justify;
 }
-
+.school h1{
+display: inline-block;
+}
 .connections{
-  text-align: left;
-  color: white;
-  width: 80%;
-  border: solid 2px cyan;
+  color: #ffffff;
+  width: 60%;
+  border: solid 2px #00ffff;
   padding: 20px;
   margin: 40px auto 40px auto;
   border-radius: 20px;
 }
 
 
+/* Skills */
+.wrapper{
+  color: #ffffff;
+  width: 60%;
+  border: solid 3px #cc00ff;
+  padding: 20px;
+  margin: 40px auto 40px auto;
+  border-radius: 20px;
 
+}
 
+.skills{
+  background-color: black;
+}
+.card {
+  color: #ffffff;
+  background-color: black;
+  display: inline-block;
+  border: solid 2px #33ff00;
+  padding: 20px;
+  margin: 40px auto 40px auto;
+  border-radius: 20px;
+}
+.card-img-top{
+  width: 50px;
+}
 
+.card-body p{
+  text-align: justify;
+}
 
 /* Footer */
 
@@ -132,7 +161,7 @@ width: 100%;
 }
 .footer a {
     margin: 0 10px 0 10px;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 
 }
