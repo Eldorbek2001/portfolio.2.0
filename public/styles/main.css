@@ -203,10 +203,10 @@ display: inline-block;
 @media only screen and (max-width: 870px) {
 
   .home-info{
-      border-top: solid 2px gray;
-      border-left: initial;
+    border-top: solid 2px gray;
+    border-left: initial;
     background-color: black;
-    width: 100%;
+    width: auto;
     height: initial;
     float:none;
 
