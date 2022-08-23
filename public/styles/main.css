@@ -199,3 +199,36 @@ display: inline-block;
     text-decoration: none;
 
 }
+
+@media only screen and (max-width: 500px) {
+
+  .home-info{
+      border-top: solid 2px gray;
+    background-color: black;
+    width: auto;
+    height: initial;
+    float:none;
+
+  }
+  .myshadow{
+
+    height: initial;
+    width: auto;
+    float:none;
+  }
+
+  .school{
+    width: 90%;
+  }
+  .connections{
+    width: 90%;
+  }
+  .wrapper{
+    width: 90%;
+    text-align: center;
+  }
+  .card{
+    text-align: center;
+  }
+
+}
