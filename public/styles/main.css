@@ -179,8 +179,7 @@ display: inline-block;
 
 
 .container{
-    padding-left: 50px;
-    padding-right: 50px;
+  text-align: center;
     background-color: #343A40;
   }
 .nav-item a{
