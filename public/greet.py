@@ -1,8 +1,6 @@
 def greet():
-    print("Hi, my name is Ali. I am a web-developer.")
-    print("Welcome to my web-site!!!")
-
-
+    print("Welcome to my web-site!")
+    print("My name is Ali. I am a programmer")
 
 
 greet()
