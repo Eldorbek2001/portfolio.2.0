@@ -211,6 +211,9 @@ display: inline-block;
     float:none;
 
   }
+  .footer-icon-div{
+    margin: 6px 0;
+  }
   .myshadow{
 
     height: initial;
