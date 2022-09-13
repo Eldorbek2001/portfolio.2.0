@@ -87,6 +87,20 @@ width: 100%;
   border-radius: 20px;
 
 }
+.glow {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px blue, 0 0 40px blue, 0 0 50px blue, 0 0 60px blue, 0 0 70px blue;
+  }
+  to {
+    box-shadow: 0 0 20px #fff, 0 0 30px  #3366ff, 0 0 40px #3366ff, 0 0 50px #3366ff, 0 0 60px #3366ff, 0 0 70px #3366ff, 0 0 80px #3366ff;
+  }
+}
+
 /* Education page */
 .education{
   background-color: black;
