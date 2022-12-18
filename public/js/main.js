@@ -6,5 +6,6 @@ function navbarHighlight(){
 
 function navBarToggle(navbarName){
     var navbarItem = document.getElementById("navbar-"+navbarName);
-    navbarItem.style.fontSize = "120%";
+    //navbarItem.style.fontSize = "120%";
+    navbarItem.style.boxShadow = "0px 0px 15px lightblue"
   }
