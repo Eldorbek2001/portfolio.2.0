@@ -111,7 +111,7 @@ width: 100%;
 }
 .school{
   color: #ffffff;
-  width: 60%;
+  width: 80%;
   border: solid 2px #fff000;
   padding: 40px;
   margin: 40px auto 40px auto;
@@ -150,7 +150,7 @@ display: inline-block;
 
 .connections{
   color: #ffffff;
-  width: 60%;
+  width: 80%;
   border: solid 2px #00ffff;
   padding: 20px;
   margin: 40px auto 40px auto;
@@ -165,7 +165,7 @@ display: inline-block;
 /* Skills */
 .wrapper{
   color: #ffffff;
-  width: 60%;
+  width: 80%;
   border: solid 3px #cc00ff;
   padding: 20px;
   margin: 40px auto 40px auto;
