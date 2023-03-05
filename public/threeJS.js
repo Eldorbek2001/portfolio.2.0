@@ -21,6 +21,8 @@ var contols = new THREE.OrbitControls(camera, renderer.domElement);
 var geometryEarth = new THREE.SphereGeometry(1, 100, 100);
 var materialEarth = new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load("images/earth1.jpg")});
 const sphere = new THREE.Mesh(geometryEarth, materialEarth);
+
+sphere.rotation.y = 2.2;
 var geometryAtmosphere = new THREE.SphereGeometry(1.05, 100, 100);
 var materialAtmosphere = new THREE.MeshBasicMaterial({color: 0x0099DD, wireframe: false, blending: THREE.AdditiveBlending, opacity: 0.2});
 const atmosphere = new THREE.Mesh(geometryAtmosphere, materialAtmosphere);
