@@ -9,3 +9,4 @@ function navBarToggle(navbarName){
     //navbarItem.style.fontSize = "120%";
     navbarItem.style.boxShadow = "0px 0px 15px lightblue"
   }
+  
