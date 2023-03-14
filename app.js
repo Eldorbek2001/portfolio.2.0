@@ -9,28 +9,7 @@ var nodemailer = require('nodemailer');
 //const { Telegraf } = require('telegraf');
 //const bot = new Telegraf(process.env.BOT_TOKEN);
 //const telegramHandler = require(__dirname + "/views/telegramHandler.js");
-var transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'eldorbek2001@arizona.edu',
-    pass: '44!o575823277O'
-  }
-});
 
-var mailOptions = {
-  from: 'eldorbekclash@gmail.com',
-  to: 'sobitxanovr@gmail.com',
-  subject: 'Sending Email using Node.js',
-  text: 'That was easy!'
-};
-
-transporter.sendMail(mailOptions, function(error, info){
-  if (error) {
-    console.log(error);
-  } else {
-    console.log('Email sent: ' + info.response);
-  }
-});
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
