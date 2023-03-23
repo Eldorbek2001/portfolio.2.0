@@ -153,8 +153,9 @@ display: inline-block;
   text-align: left;
 }
 .contact-pic img{
-
-    border-radius: 20px;
+  width: 100px;
+  height: auto;
+  border-radius: 20px;
 }
 
 .connections{
