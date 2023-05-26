@@ -3,8 +3,6 @@ require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const app =  express();
-const BOT_TOKEN = "5526260914:AAFMZbzCPd5A9cEDrxUSSwrJbhX88RtaGE4";
-
 
 // * Daily leetcode video
 // ? maybe with the code answer
