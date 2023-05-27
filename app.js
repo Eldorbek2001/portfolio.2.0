@@ -11,12 +11,11 @@ const mongoose = require('mongoose');
 const express = require("express");
 
 const githubAPI = "https://api.github.com/repos/neetcode-gh/leetcode/contents/python/";
-const chatID = -1001665418964;
 const app = express();
 
 
 
-var currentDay = -1;
+var currentDay = 0;
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -110,33 +109,60 @@ Video: ${problem.video}
 
 
 bot.command('start', (ctx) => {
-  savedCtx = ctx;
-  sendDailyLeetcodeProblem(ctx);
-  ctx.reply('Bot started');
+  console.log(ctx.chat.id);
+  console.log(process.env.CHAT_ID);
+  if( ctx.chat.id == process.env.CHAT_ID){
+    ctx.reply('Bot started');
+    savedCtx = ctx;
+    sendDailyLeetcodeProblem(ctx);
+
+  } else{
+
+
+    ctx.reply('Wrong!');
+  }
+  
 });
 
 
 bot.command('today', (ctx) => {
-  sendDailyLeetcodeProblem(ctx);
+
+  if( ctx.chat.id == process.env.CHAT_ID){
+    
+    sendDailyLeetcodeProblem(ctx);
+  }
+
 });
 
 bot.command('solution', (ctx) => {
-  sendSolution(ctx);
+  if( ctx.chat.id == process.env.CHAT_ID){
+    sendSolution(ctx);
+    
+
+  }
+
 });
 
 bot.command('next', (ctx) => {
-  if(currentDay < 150){
-    currentDay += 1;
+  if( ctx.chat.id == process.env.CHAT_ID){
+    if(currentDay < 150){
+      currentDay += 1;
+    }
+    
+    sendDailyLeetcodeProblem(ctx);
   }
-  
-  sendDailyLeetcodeProblem(ctx);
+
 });
 
 bot.command('previous', (ctx) => {
-  if(currentDay > 0){
-    currentDay -= 1;
+  if( ctx.chat.id == process.env.CHAT_ID){
+    if(currentDay > 0){
+      currentDay -= 1;
+    }
+    sendDailyLeetcodeProblem(ctx);
+
   }
-  sendDailyLeetcodeProblem(ctx);
+
 });
 
 bot.launch();
