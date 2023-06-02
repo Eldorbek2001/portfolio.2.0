@@ -112,7 +112,7 @@ Video: ${problem.video}
 bot.command('start', (ctx) => {
   console.log(ctx.chat.id);
   console.log(process.env.CHAT_ID);
-  if( ctx.chat.id == process.env.CHAT_ID){
+  if( ctx.chat.id == process.env.CHAT_ID || true){
     ctx.reply('Bot started');
     savedCtx = ctx;
     sendDailyLeetcodeProblem(ctx);
@@ -128,7 +128,7 @@ bot.command('start', (ctx) => {
 
 bot.command('today', (ctx) => {
 
-  if( ctx.chat.id == process.env.CHAT_ID){
+  if( ctx.chat.id == process.env.CHAT_ID || true){
     
     sendDailyLeetcodeProblem(ctx);
   }
@@ -145,7 +145,7 @@ bot.command('solution', (ctx) => {
 });
 
 bot.command('next', (ctx) => {
-  if( ctx.chat.id == process.env.CHAT_ID){
+  if( ctx.chat.id == process.env.CHAT_ID || true){
     if(currentDay < 150){
       currentDay += 1;
     }
@@ -156,7 +156,7 @@ bot.command('next', (ctx) => {
 });
 
 bot.command('previous', (ctx) => {
-  if( ctx.chat.id == process.env.CHAT_ID){
+  if( ctx.chat.id == process.env.CHAT_ID || true){
     if(currentDay > 0){
       currentDay -= 1;
     }
