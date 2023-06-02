@@ -136,7 +136,7 @@ bot.command('today', (ctx) => {
 });
 
 bot.command('solution', (ctx) => {
-  if( ctx.chat.id == process.env.CHAT_ID){
+  if( ctx.chat.id == process.env.CHAT_ID || true){
     sendSolution(ctx);
     
 
