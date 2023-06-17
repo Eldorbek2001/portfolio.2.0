@@ -146,12 +146,15 @@ padding: 20px;
 .school h1{
 display: inline-block;
 }
-.contact{
+.contact {
   padding: 10px;
   margin: 20px;
   text-align: left;
-  display: block;
+  display: flex;
+  align-items: center; /* This will vertically center the content */
 }
+
+
 .contact-info{
   height: 120px;
   display: inline-block;
@@ -169,6 +172,12 @@ display: inline-block;
   width: 100px;
   height: auto;
   border-radius: 20px;
+  margin: 8px;
+}
+.contact-pic, .contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the items */
 }
 
 .connections{
