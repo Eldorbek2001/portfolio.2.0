@@ -1,5 +1,6 @@
 require('dotenv').config();
 const bot = require('./bot');
+const alumni_bot = require('./alumni_bot');
 
 const axios = require('axios');
 const bodyParser = require("body-parser");
@@ -26,6 +27,7 @@ mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_KEY}
 
 
 bot.launch();
+alumni_bot.launch();
 
 
 
