@@ -14,7 +14,7 @@ alumni_bot.command('help', (ctx) => {
   // Check if the chat ID is authorized
   if (isChatAuthorized(ctx.chat.id)) {
     // Change this line if you want to send a different image or another response
-    const rulesFilePath = path.join('public/rules.png');
+    const rulesFilePath = __dirname+'/public/alumni/rules.png';
   
     // Send the 'rules.png' file as a reply
     ctx.replyWithPhoto({ source: rulesFilePath });
