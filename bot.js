@@ -7,16 +7,6 @@ let currentDay = 0;
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
 
-cron.schedule('* * * * * *', async function() {
-  console.log('Sending Leetcode Problem');
-  if (savedCtx) {
-    if(currentDay < 150){
-      currentDay += 1;
-    }
-    await sendDailyLeetcodeProblem(savedCtx);
-  }
-});
-
 
 const LeetcodeProblemSchema = new mongoose.Schema({
   leetcodeID: {
