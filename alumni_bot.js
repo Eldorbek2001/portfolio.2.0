@@ -49,7 +49,7 @@ alumni_bot.command('quote', (ctx) => {
           const quoteData = JSON.parse(body);
           console.log(quoteData);
           const quote = quoteData[Math.floor(Math.random() * quoteData.length)];
-          ctx.reply(`"${quote.quote}" - ${quote.author}`);
+          ctx.reply(`"${quote.quote}"\n - ${quote.author} (${quote.category})`);
         }
       });
     } else {
