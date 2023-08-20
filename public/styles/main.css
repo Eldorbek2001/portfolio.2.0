@@ -1,23 +1,22 @@
 body {
-  font-family: 'PT Mono', monospace;
+  font-family: "PT Mono", monospace;
   text-align: center;
   /* footer-fixing */
   text-align: center;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height:100vh;
-  }
-  iframe{
-    border: none;
-  }
-
+  min-height: 100vh;
+}
+iframe {
+  border: none;
+}
 
 /* Navabar */
-.nav-link{
+.nav-link {
   font-size: 100px;
 }
 /* Landing */
-.profile-pic{
+.profile-pic {
   position: relative;
   height: 200px;
   width: 200px;
@@ -25,92 +24,92 @@ body {
   border-radius: 100%;
   background-color: #ffffff;
 }
-.skill{
+.skill {
   border: solid 10px;
   margin: 10px;
   display: inline-block;
   width: auto;
 }
-.skill-gif{
-width: 100%;
+.skill-gif {
+  width: 100%;
 }
-.software-dev{
+.software-dev {
   background-color: blue;
 }
-.home-info{
+.home-info {
   text-align: left;
   display: inline-block;
   padding: 20px;
-  width:40%;
+  width: 40%;
   height: 100%;
   background-color: black;
   border-left: solid 1px gray;
 }
-.myshadow{
- float: left;
- display: inline-block;
- width:60%;
- height: 100%;
- background-color: black;
- padding: 20px;
+.myshadow {
+  float: left;
+  display: inline-block;
+  width: 60%;
+  height: 100%;
+  background-color: black;
+  padding: 20px;
 }
 
-.project-info{
+.project-info {
   color: gray;
 }
 
-.project-tools{
-  position: absolute;
-  padding-bottom:10px;
+.project-tools {
+  position: relative;
+  bottom: 10px;
+  color: gray;
+  padding-bottom: 10px;
   bottom: 0;
 }
-.project-img{
-width: 100%;
-padding: 20px;
+.project-img {
+  width: 100%;
+  padding: 20px;
 }
 
-
-.globe{
+.globe {
   text-align: center;
 }
 
-.experience-box{
+.experience-box {
   padding: 20px;
   margin: 20px 10px 20px 10px;
   border-radius: 20px;
 }
-.experience-item{
+.experience-item {
   padding: 20px;
   margin: 20px 0px 20px 0px;
   border: solid 4px blue;
   border-radius: 20px;
 }
-.experience-item p{
-  color: #ADB5BD;
+.experience-item p {
+  color: #adb5bd;
 }
-.me p{
-  color: #ADB5BD;
+.me p {
+  color: #adb5bd;
 }
-.experience-item h4{
+.experience-item h4 {
   padding: 0;
   margin: 0;
-  color: #ADB5BD;
+  color: #adb5bd;
 }
-.projects-box{
+.projects-box {
   padding: 20px;
   margin: 50px 10px 20px 10px;
   border-radius: 20px;
 }
-.project-icon{
+.project-icon {
   width: 20px;
 }
-.project-item{
+.project-item {
   display: inline-block;
   padding: 20px;
   margin: 20px 15px 20px 15px;
   border: solid 3px #8b008b;
   border-radius: 20px;
-
 }
 
 .glow {
@@ -120,31 +119,32 @@ padding: 20px;
 }
 @-webkit-keyframes glow {
   from {
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px blue, 0 0 40px blue, 0 0 50px blue, 0 0 60px blue, 0 0 70px blue;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px blue, 0 0 40px blue,
+      0 0 50px blue, 0 0 60px blue, 0 0 70px blue;
   }
   to {
-    box-shadow: 0 0 20px #fff, 0 0 30px  #3366ff, 0 0 40px #3366ff, 0 0 50px #3366ff, 0 0 60px #3366ff, 0 0 70px #3366ff, 0 0 80px #3366ff;
+    box-shadow: 0 0 20px #fff, 0 0 30px #3366ff, 0 0 40px #3366ff,
+      0 0 50px #3366ff, 0 0 60px #3366ff, 0 0 70px #3366ff, 0 0 80px #3366ff;
   }
 }
 
 /* Education page */
-.education{
+.education {
   background-color: black;
 }
-.school{
+.school {
   color: #ffffff;
   width: 80%;
   border: solid 2px #fff000;
   padding: 40px;
   margin: 40px auto 40px auto;
   border-radius: 20px;
-
 }
-.school-info{
+.school-info {
   text-align: justify;
 }
-.school h1{
-display: inline-block;
+.school h1 {
+  display: inline-block;
 }
 .contact {
   padding: 10px;
@@ -154,33 +154,32 @@ display: inline-block;
   align-items: center; /* This will vertically center the content */
 }
 
-
-.contact-info{
+.contact-info {
   height: 120px;
   display: inline-block;
 }
-.contact-info p{
+.contact-info p {
   position: relative;
   top: 0;
-
 }
-.contact-pic{
+.contact-pic {
   display: inline-block;
   text-align: left;
 }
-.contact-pic img{
+.contact-pic img {
   width: 100px;
   height: auto;
   border-radius: 20px;
   margin: 8px;
 }
-.contact-pic, .contact-info {
+.contact-pic,
+.contact-info {
   display: flex;
   flex-direction: column;
   justify-content: center; /* Vertically centers the items */
 }
 
-.connections{
+.connections {
   color: #ffffff;
   width: 80%;
   border: solid 2px #00ffff;
@@ -189,23 +188,21 @@ display: inline-block;
   border-radius: 20px;
 }
 
-.connections img{
+.connections img {
   width: 120px;
 }
 
-
 /* Skills */
-.wrapper{
+.wrapper {
   color: #ffffff;
   width: 80%;
   border: solid 3px #cc00ff;
   padding: 20px;
   margin: 40px auto 40px auto;
   border-radius: 20px;
-
 }
 
-.skills{
+.skills {
   background-color: black;
 }
 .card {
@@ -217,75 +214,64 @@ display: inline-block;
   margin: 40px auto 40px auto;
   border-radius: 20px;
 }
-.card-img-top{
+.card-img-top {
   width: 50px;
 }
 
-.card-body p{
+.card-body p {
   text-align: justify;
 }
 
 /* Footer */
 
-
-.container{
+.container {
   text-align: center;
-    background-color: #000000;
-  }
-.nav-item a{
+  background-color: #000000;
+}
+.nav-item a {
   font-size: 95%;
   margin: 0 10px 0 10px;
 }
 .footer a {
-    margin: 0 10px 0 10px;
-    color: #ffffff;
-    text-decoration: none;
-
+  margin: 0 10px 0 10px;
+  color: #ffffff;
+  text-decoration: none;
 }
 .footer a:hover {
-    margin: 0 10px 0 10px;
-    color: gray;
-    text-decoration: none;
-
+  margin: 0 10px 0 10px;
+  color: gray;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 870px) {
-
-  .home-info{
-
+  .home-info {
     border-top: solid 2px gray;
     border-left: initial;
     background-color: black;
     width: 100%;
     height: initial;
-    float:none;
-
+    float: none;
   }
-  .footer-icon-div{
+  .footer-icon-div {
     margin: 6px 0;
   }
-  .myshadow{
-
+  .myshadow {
     height: initial;
     width: 100%;
-    float:none;
+    float: none;
   }
 
-  .school{
+  .school {
     width: 90%;
   }
-  .connections{
+  .connections {
     width: 90%;
   }
-  .wrapper{
+  .wrapper {
     width: 90%;
     text-align: center;
   }
-  .card{
+  .card {
     text-align: center;
   }
-
-
 }
-
-
