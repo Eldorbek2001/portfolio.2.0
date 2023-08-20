@@ -1,6 +1,4 @@
-
 require('dotenv').config();
-const alumni_bot = require('./alumni_bot');
 
 const axios = require("axios");
 const bodyParser = require("body-parser");
