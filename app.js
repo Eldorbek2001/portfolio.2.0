@@ -1,5 +1,4 @@
 require('dotenv').config();
-const bot = require('./bot');
 const alumni_bot = require('./alumni_bot');
 
 const axios = require('axios');
@@ -26,8 +25,6 @@ app.set('view engine', 'ejs');
 mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_KEY}@cluster0.mjlk1.mongodb.net/?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true, writeConcern: { w: 'majority', j: true, wtimeout: 1000 } });
 
 
-bot.launch();
-alumni_bot.launch();
 
 
 
