@@ -4,6 +4,7 @@
   "description": "testthree",
   "main": "app.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ali",
@@ -12,7 +13,6 @@
     "node": "16.15.1"
   },
   "dependencies": {
-    "axios": "^0.23.0",
     "body-parser": "^1.20.0",
     "bootstrap": "^5.2.0",
     "cheerio": "^1.0.0-rc.12",
